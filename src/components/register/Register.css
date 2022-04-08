@@ -1,0 +1,59 @@
+.Register__container{
+    width: 100%;
+    height:100vh;
+    display: flex;
+}
+
+.Register__container .imgBx{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.Register__container .imgBx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Register__container .imgBx::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top right, rgba(0, 0, 0, 2), transparent);
+}
+
+.__contentBx-form{
+    width: 100%;
+    padding: 20px 40px;
+    display: block;
+}
+
+.__contentBx-form input{
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding:10px 20px;
+    border:1px solid crimson;
+    border-radius: 2px;
+    outline: none;
+}
+
+.__contentBx-form button{
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: crimson;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.-contentContainer__contentBx a{
+    text-decoration: none;
+    color: crimson;
+}

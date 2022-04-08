@@ -1,0 +1,85 @@
+.QrCode__Container{
+    width: 100%;
+    height:100vh;
+    display: flex;
+}
+
+.QrCode__Container .imgBx{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.QrCode__Container .imgBx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.QrCode__Container .imgBx::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top right, rgba(0, 0, 0, 2), transparent);
+}
+
+.QrCode__Container-contentContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.-contentContainer__contentBx{
+    width: 400px;
+    height: 600px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.__contentBx-logo{
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background: crimson;
+    border-radius: 50px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.__contentBx-logo img{
+    transform: scale(0.6);
+}
+
+.-contentContainer__contentBx h1{
+    display: block;
+    text-align: center;
+}
+
+.-contentContainer__contentBx h3{
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.-contentContainer__contentBx .qrCode{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
